@@ -1,9 +1,8 @@
 {
   "name": "wordpress_and_gatsby-starter",
   "private": true,
-  "description": "Demo starter for combining Gatsby and WordPress. Created for the LinkedIn Learning course `Building a Headless WordPress Site with Gatsby` and based on Gatsby Default Starter by @gatsbyjs",
+  "description": "Demo starter for combining Gatsby and WordPress",
   "version": "0.1.0",
-  "author": "Morten Rand-Hendriksen, based on work by Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@wordpress/block-library": "^2.28.3",
     "gatsby": "^2.32.3",
@@ -39,12 +38,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LinkedInLearning/wordpress_and_gatsby-starter"
-  },
-  "bugs": {
-    "url": "https://github.com/LinkedInLearning/wordpress_and_gatsby-starter/issues"
   }
 }
