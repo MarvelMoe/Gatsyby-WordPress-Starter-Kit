@@ -31,13 +31,14 @@ const MenuLoop = ({ menuItems }) => {
   )
 }
 
+/*Note: Change main is your menu name */
 const MainNav = () => {
   const wpMenu = useStaticQuery(graphql`
     {
       allWpMenuItem(
         sort: { fields: order, order: ASC }
         filter: {
-          menu: { node: { slug: { eq: "all-pages" } } }
+          menu: { node: { slug: { eq: "menu" } } }
           parentDatabaseId: { eq: 0 }
         }
       ) {

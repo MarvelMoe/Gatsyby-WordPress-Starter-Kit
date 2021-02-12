@@ -7,8 +7,9 @@ import MainNav from "./mainNav"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `#000080`,
+      marginBottom: `1rem`,
+          textAlign: `center`,
     }}
   >
     <div
@@ -28,6 +29,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+
       </h1>
     </div>
     <MainNav />

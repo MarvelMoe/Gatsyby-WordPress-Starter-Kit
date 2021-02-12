@@ -6,14 +6,24 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-wordpress-experimental`,
+      resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://mywpsite.local/graphql`,
+        url: `http://headless-site/graphql`,
         develop: {
           hardCacheMediaFiles: true,
         },
       },
     },
+    {
+      resolve: "gatsby-source-wordpress-menus",
+      options: {
+        wordpressUrl: "http://headless-site/",
+        languages: ["de", "en"],
+        enableWpml: true,
+        allowCache: true,
+        maxCacheDurationSeconds: 60 * 60 * 24
+      },
+        },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
